@@ -1,0 +1,91 @@
+export function homePage() {
+  return `
+    <header class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__introduction container">
+        <p class="intro__text">
+          I help businesses transform outdated websites into modern digital
+          experiences.
+        </p>
+        <p class="fields__text">
+          Webdesign<br>
+          UX / UI Design<br>
+          Branding &amp; Identity<br>
+          Development<br>
+          SEO &amp; Analytics
+        </p>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Portfolio</p>
+        <h1 class="hero__title">NICKLAS ØEN</h1>
+        <p class="hero__subtitle">I build clean, modern web experiences.</p>
+      </div>
+    </header>
+
+    <section class="about">
+        <div class="container about">
+            <h2>About Me</h2>
+            <p class="about__text">I work closely with my clients and place great emphasis on understanding their business, 
+            their goals and what makes them unique. This allows me to tailor solutions that are not only technically 
+            sound, but also well thought out, user-friendly and visually clear.</p>
+        </div>
+    </section>
+        <section class="services">
+      <div class="container">
+        <h2 class="services__title">Services</h2>
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Web Design</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__content">
+              <p>Custom web design tailored to your brand. I create modern, user-friendly interfaces that engage visitors and drive conversions.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Development</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__content">
+              <p>Front-end development with HTML, CSS, and JavaScript. Building responsive, fast-loading websites optimized for all devices.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>UX / UI Design</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__content">
+              <p>User experience and interface design focused on usability. Creating intuitive designs that solve real user problems.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Branding &amp; Identity</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__content">
+              <p>Complete branding solutions including logo design, color palettes, and brand guidelines. Building a cohesive visual identity.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>SEO &amp; Analytics</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__content">
+              <p>Search engine optimization and analytics setup to increase visibility and track performance. Data-driven strategies for growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}

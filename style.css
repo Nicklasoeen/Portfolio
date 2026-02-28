@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #0e0f12;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    "Clash Display", "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem 0;
+}
+
+.nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-family: "Clash Display", "Inter Tight", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f5f2ed;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav__links a {
+  color: #d9d1c7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+  color: #ffffff;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 6rem 0;
+  background-image: url("assets/images/hero-gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(10, 10, 12, 0.85),
+    rgba(10, 10, 12, 0.35)
+  );
+}
+
+.hero__introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.intro__text {
+  color: #ffffff;
+  font-weight: 400;
+  width: 20%;
+}
+
+.fields__text {
+  color: #ffffff;
+  font-weight: 400;
+  text-align: right;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #e6d9c9;
+}
+
+.hero__title {
+  font-size: 120px;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  color: #d9d1c7;
+}
+
+.about__text {
+  width: 60%;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  gap: 4rem;
+  padding: 6rem 0;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.services {
+  padding: 6rem 0;
+}
+
+.services__title {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__item {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.accordion__item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.accordion__header {
+  width: 100%;
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Clash Display", "Inter Tight", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.accordion__header:hover {
+  color: #d9d1c7;
+}
+
+.accordion__icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: transform 0.4s ease;
+}
+
+.accordion__item.active .accordion__icon {
+  transform: rotate(45deg);
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease,
+    padding 0.4s ease;
+}
+
+.accordion__item.active .accordion__content {
+  max-height: 300px;
+  padding-bottom: 1.5rem;
+}
+
+.accordion__content p {
+  color: #d9d1c7;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+    padding: 4rem 0;
+  }
+
+  .services {
+    padding: 4rem 0;
+  }
+
+  .services__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .accordion__header {
+    font-size: 1rem;
+    padding: 1.2rem 0;
+  }
+}
