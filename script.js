@@ -20,14 +20,34 @@ function setupAccordion() {
       const item = header.parentElement;
       const isActive = item.classList.contains("active");
 
-      // Close all items
       document.querySelectorAll(".accordion__item").forEach((i) => {
         i.classList.remove("active");
       });
 
-      // Open clicked item if it wasn't already open
       if (!isActive) {
         item.classList.add("active");
+      }
+    });
+  });
+}
+
+function setupProjects() {
+  const projectCards = document.querySelectorAll(".project-card");
+
+  projectCards.forEach((card) => {
+    const logo = card.querySelector(".project-card__logo");
+
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left - logo.width / 2;
+      const y = e.clientY - rect.top - logo.height / 2;
+      logo.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    card.addEventListener("click", () => {
+      const url = card.dataset.projectUrl;
+      if (url) {
+        window.open(url, "_blank");
       }
     });
   });
@@ -38,6 +58,7 @@ function router() {
   const page = routes[hash] || homePage;
   app.innerHTML = page();
   setupAccordion();
+  setupProjects();
 }
 
 window.addEventListener("hashchange", router);

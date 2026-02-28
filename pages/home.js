@@ -23,15 +23,16 @@ export function homePage() {
       </div>
     </header>
 
-    <section class="about">
-        <div class="container about">
-            <h2>About Me</h2>
-            <p class="about__text">I work closely with my clients and place great emphasis on understanding their business, 
+    <section class="section about">
+        <div class="container section__header">
+            <h2 class="section__title">About Me</h2>
+            <p class="section__text">I work closely with my clients and place great emphasis on understanding their business, 
             their goals and what makes them unique. This allows me to tailor solutions that are not only technically 
             sound, but also well thought out, user-friendly and visually clear.</p>
         </div>
     </section>
-        <section class="services">
+
+    <section class="services">
       <div class="container">
         <h2 class="services__title">Services</h2>
         <div class="accordion">
@@ -86,6 +87,20 @@ export function homePage() {
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="section projects">
+        <div class="container section__header">
+            <h2 class="section__title">Latest <br> projects</h2>
+            <p class="section__text section__text--small">A thoughtfully curated portfolio demonstrating our <br> commitment to simplicity and purposeful design.</p>
+        </div>
+
+        <div class="projects__showcase container">
+          <div class="project-card" data-project-url="https://nicklasoeen.github.io/html-css-nicklas/index.html">
+            <img src="assets/images/rainy-days.png" alt="Rainy Days Project" class="project-card__image">
+            <img src="assets/logos/rainy-logo.png" alt="Rainy Days Logo" class="project-card__logo">
+          </div>
+        </div>
     </section>
   `;
 }
