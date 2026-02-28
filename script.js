@@ -36,13 +36,25 @@ function setupProjects() {
 
   projectCards.forEach((card) => {
     const logo = card.querySelector(".project-card__logo");
+      let targetX = 0;
+      let targetY = 0;
+      let currentX = 0;
+      let currentY = 0;
+      const ease = 0.15;
 
     card.addEventListener("mousemove", (e) => {
       const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left - logo.width / 2;
-      const y = e.clientY - rect.top - logo.height / 2;
-      logo.style.transform = `translate(${x}px, ${y}px)`;
+        targetX = e.clientX - rect.left - logo.width / 2;
+        targetY = e.clientY - rect.top - logo.height / 2;
     });
+
+      const animate = () => {
+        currentX += (targetX - currentX) * ease;
+        currentY += (targetY - currentY) * ease;
+        logo.style.transform = `translate(${currentX}px, ${currentY}px)`;
+        requestAnimationFrame(animate);
+      };
+      animate();
 
     card.addEventListener("click", () => {
       const url = card.dataset.projectUrl;

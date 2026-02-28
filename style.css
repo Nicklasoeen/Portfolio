@@ -215,6 +215,7 @@ h6 {
 
 .project-card:hover .project-card__logo {
   opacity: 1;
+  transition-delay: 0.15s;
 }
 
 .services {
