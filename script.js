@@ -36,25 +36,39 @@ function setupProjects() {
 
   projectCards.forEach((card) => {
     const logo = card.querySelector(".project-card__logo");
-      let targetX = 0;
-      let targetY = 0;
-      let currentX = 0;
-      let currentY = 0;
-      const ease = 0.15;
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let animationId = null;
+    const ease = 0.15;
 
     card.addEventListener("mousemove", (e) => {
       const rect = card.getBoundingClientRect();
-        targetX = e.clientX - rect.left - logo.width / 2;
-        targetY = e.clientY - rect.top - logo.height / 2;
+      targetX = e.clientX - rect.left - logo.width / 2;
+      targetY = e.clientY - rect.top - logo.height / 2;
     });
 
-      const animate = () => {
-        currentX += (targetX - currentX) * ease;
-        currentY += (targetY - currentY) * ease;
-        logo.style.transform = `translate(${currentX}px, ${currentY}px)`;
-        requestAnimationFrame(animate);
-      };
-      animate();
+    const animate = () => {
+      currentX += (targetX - currentX) * ease;
+      currentY += (targetY - currentY) * ease;
+      logo.style.transform = `translate(${currentX}px, ${currentY}px) scale(1.4)`;
+      animationId = requestAnimationFrame(animate);
+    };
+
+    card.addEventListener("mouseenter", () => {
+      if (!animationId) {
+        animationId = requestAnimationFrame(animate);
+      }
+    });
+
+    card.addEventListener("mouseleave", () => {
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+        animationId = null;
+        logo.style.transform = `translate(0, 0) scale(1.4)`;
+      }
+    });
 
     card.addEventListener("click", () => {
       const url = card.dataset.projectUrl;
