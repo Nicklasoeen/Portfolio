@@ -45,8 +45,8 @@ function setupProjects() {
 
     card.addEventListener("mousemove", (e) => {
       const rect = card.getBoundingClientRect();
-      targetX = e.clientX - rect.left - logo.width / 2;
-      targetY = e.clientY - rect.top - logo.height / 2;
+      targetX = (e.clientX - rect.left) - (rect.width / 2);
+      targetY = (e.clientY - rect.top) - (rect.height / 2);
     });
 
     const animate = () => {

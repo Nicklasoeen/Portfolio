@@ -203,12 +203,15 @@ h6 {
 
 .project-card__logo {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 120px;
   height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  z-index: 10;
   pointer-events: none;
-  opacity: 0;
+  opacity: 1;
   transition:
     opacity 0.2s ease,
     transform 0.2s ease;
