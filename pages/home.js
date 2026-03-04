@@ -97,13 +97,14 @@ export function homePage() {
 
         <div class="projects__showcase container">
           <div class="project-card" data-project-url="https://nicklasoeen.github.io/html-css-nicklas/index.html">
-            <img src="assets/images/rainy-days.png" alt="Rainy Days Project" class="project-card__image">
+            <img src="assets/images/rainy-days.jpg" alt="Rainy Days Project" class="project-card__image">
             <img src="assets/logos/rainy-logo.png" alt="Rainy Days Logo" class="project-card__logo">
           </div>
           <div class="project-card__info">
             <div class="project-card__details">
               <h3 class="project-card__title">Rainy Days</h3>
-              <p class="project-card__description">An outdoor rain jacket e-commerce store with a clean, modern shopping experience.</p>
+              <span class="project-card__tech">HTML &amp; CSS</span>
+              <p class="project-card__description">An outdoor rain jacket e-commerce store built with semantic HTML and custom CSS. Focused on clean design, responsive layouts, and a modern shopping experience.</p>
             </div>
             <div class="project-card__links">
               <a href="https://github.com/nicklasoeen/html-css-nicklas" target="_blank" class="project-card__link">GitHub</a>
@@ -114,17 +115,36 @@ export function homePage() {
 
         <div class="projects__showcase container" style="margin-top: 6rem;">
           <div class="project-card" data-project-url="https://nicklasoeen.github.io/community-science-museum-project/index.html">
-            <img src="assets/images/bergens-forskningsmuseum.png" alt="Community Science Museum Project" class="project-card__image">
+            <img src="assets/images/bergens-forskningsmuseum.jpg" alt="Community Science Museum Project" class="project-card__image">
             <img src="assets/logos/bf-museum-logo (1).svg" alt="Community Science Museum Logo" class="project-card__logo">
           </div>
           <div class="project-card__info">
             <div class="project-card__details">
               <h3 class="project-card__title">Community Science Museum</h3>
-              <p class="project-card__description">An interactive science museum website showcasing exhibits and educational programs.</p>
+              <span class="project-card__tech">HTML &amp; CSS</span>
+              <p class="project-card__description">An interactive science museum website built with HTML and CSS. Showcasing exhibits and educational programs with an engaging, accessible design.</p>
             </div>
             <div class="project-card__links">
               <a href="https://github.com/nicklasoeen/community-science-museum-project" target="_blank" class="project-card__link">GitHub</a>
               <a href="https://nicklasoeen.github.io/community-science-museum-project/index.html" target="_blank" class="project-card__link">Live Site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__showcase container" style="margin-top: 6rem;">
+          <div class="project-card" data-project-url="https://nicklasoeen.github.io/html-css-nicklas/index.html">
+            <img src="assets/images/rainydays-js.jpg" alt="Rainy Days JavaScript Project" class="project-card__image">
+            <img src="assets/logos/rainy-logo.png" alt="Rainy Days Logo" class="project-card__logo">
+          </div>
+          <div class="project-card__info">
+            <div class="project-card__details">
+              <h3 class="project-card__title">Rainy Days JS</h3>
+              <span class="project-card__tech">HTML, CSS, JavaScript &amp; API</span>
+              <p class="project-card__description">An enhanced version of the Rainy Days store using JavaScript to fetch real product data from the Noroff API. Dynamic product rendering replaces static mock data.</p>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/nicklasoeen/html-css-nicklas" target="_blank" class="project-card__link">GitHub</a>
+              <a href="https://nicklasoeen.github.io/html-css-nicklas/index.html" target="_blank" class="project-card__link">Live Site</a>
             </div>
           </div>
         </div>
