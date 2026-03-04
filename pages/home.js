@@ -1,6 +1,6 @@
 export function homePage() {
   return `
-    <header class="hero">
+    <header class="hero" id="home">
       <div class="hero__overlay"></div>
       <div class="hero__introduction container">
         <p class="intro__text">
@@ -23,16 +23,19 @@ export function homePage() {
       </div>
     </header>
 
-    <section class="section about">
+    <section class="section about" id="about">
         <div class="container section__header">
             <h2 class="section__title">About Me</h2>
+      <div class="about__content">
         <p class="section__text">I’m a front-end developer who enjoys turning ideas into clear, engaging web experiences. 
         My work combines structure, visual detail, and usability to create websites that look strong and perform well. 
         This portfolio highlights selected projects that reflect my approach to design, development, and problem-solving.</p>
+        <a href="assets/CV.pdf" target="_blank" rel="noopener" class="about__cv-link">View CV</a>
+      </div>
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="fields">
       <div class="container">
         <h2 class="services__title">Fields</h2>
         <div class="accordion">
@@ -89,7 +92,7 @@ export function homePage() {
       </div>
     </section>
 
-    <section class="section projects">
+    <section class="section projects" id="projects">
         <div class="container section__header">
             <h2 class="section__title">Latest <br> projects</h2>
             <p class="section__text section__text--small">A thoughtfully curated portfolio demonstrating our <br> commitment to simplicity and purposeful design.</p>
@@ -151,5 +154,22 @@ export function homePage() {
           </article>
         </div>
     </section>
+
+    <footer class="footer" id="contact">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <a href="#home" class="footer__logo">NØ</a>
+          <p class="footer__tagline">Building thoughtful digital experiences.</p>
+        </div>
+        <div class="footer__right">
+          <div class="footer__links">
+            <a href="https://github.com/nicklasoeen" target="_blank" class="footer__link">GitHub</a>
+            <a href="https://www.linkedin.com/in/nicklas-%C3%B8en-55a654225/" target="_blank" class="footer__link">LinkedIn</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </div>
+          <p class="footer__copy">&copy; 2026 Nicklas Øen. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   `;
 }

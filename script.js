@@ -1,14 +1,4 @@
 import { homePage } from "./pages/home.js";
-import { workPage } from "./pages/work.js";
-import { aboutPage } from "./pages/about.js";
-import { contactPage } from "./pages/contact.js";
-
-const routes = {
-  "/": homePage,
-  "/work": workPage,
-  "/about": aboutPage,
-  "/contact": contactPage,
-};
 
 const app = document.getElementById("app");
 
@@ -79,13 +69,10 @@ function setupProjects() {
   });
 }
 
-function router() {
-  const hash = window.location.hash.slice(1) || "/";
-  const page = routes[hash] || homePage;
-  app.innerHTML = page();
+function renderHomePage() {
+  app.innerHTML = homePage();
   setupAccordion();
   setupProjects();
 }
 
-window.addEventListener("hashchange", router);
-window.addEventListener("DOMContentLoaded", router);
+window.addEventListener("DOMContentLoaded", renderHomePage);
