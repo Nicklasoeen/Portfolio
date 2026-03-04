@@ -4,11 +4,11 @@ export function homePage() {
       <div class="hero__overlay"></div>
       <div class="hero__introduction container">
         <p class="intro__text">
-          I help businesses transform outdated websites into modern digital
-          experiences.
+          Front-end developer focused on thoughtful design, clean code, and
+          digital experiences that feel both intuitive and memorable.
         </p>
         <p class="fields__text">
-          Webdesign<br>
+          Web Design<br>
           UX / UI Design<br>
           Branding &amp; Identity<br>
           Development<br>
@@ -26,15 +26,15 @@ export function homePage() {
     <section class="section about">
         <div class="container section__header">
             <h2 class="section__title">About Me</h2>
-            <p class="section__text">I work closely with my clients and place great emphasis on understanding their business, 
-            their goals and what makes them unique. This allows me to tailor solutions that are not only technically 
-            sound, but also well thought out, user-friendly and visually clear.</p>
+        <p class="section__text">I’m a front-end developer who enjoys turning ideas into clear, engaging web experiences. 
+        My work combines structure, visual detail, and usability to create websites that look strong and perform well. 
+        This portfolio highlights selected projects that reflect my approach to design, development, and problem-solving.</p>
         </div>
     </section>
 
     <section class="services">
       <div class="container">
-        <h2 class="services__title">Services</h2>
+        <h2 class="services__title">Fields</h2>
         <div class="accordion">
           <div class="accordion__item">
             <button class="accordion__header">
@@ -42,7 +42,7 @@ export function homePage() {
               <span class="accordion__icon">+</span>
             </button>
             <div class="accordion__content">
-              <p>Custom web design tailored to your brand. I create modern, user-friendly interfaces that engage visitors and drive conversions.</p>
+              <p>Designing clean, modern, and responsive interfaces with strong visual hierarchy, accessibility, and user-first structure.</p>
             </div>
           </div>
 
@@ -52,7 +52,7 @@ export function homePage() {
               <span class="accordion__icon">+</span>
             </button>
             <div class="accordion__content">
-              <p>Front-end development with HTML, CSS, and JavaScript. Building responsive, fast-loading websites optimized for all devices.</p>
+              <p>Building front-end solutions with HTML, CSS, and JavaScript, with focus on performance, maintainability, and responsive behavior.</p>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ export function homePage() {
               <span class="accordion__icon">+</span>
             </button>
             <div class="accordion__content">
-              <p>User experience and interface design focused on usability. Creating intuitive designs that solve real user problems.</p>
+              <p>Applying UX principles and UI systems to create intuitive digital experiences that are easy to navigate and pleasant to use.</p>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ export function homePage() {
               <span class="accordion__icon">+</span>
             </button>
             <div class="accordion__content">
-              <p>Complete branding solutions including logo design, color palettes, and brand guidelines. Building a cohesive visual identity.</p>
+              <p>Working with brand direction, visual consistency, and identity elements to create cohesive digital expressions across touchpoints.</p>
             </div>
           </div>
 
@@ -82,7 +82,7 @@ export function homePage() {
               <span class="accordion__icon">+</span>
             </button>
             <div class="accordion__content">
-              <p>Search engine optimization and analytics setup to increase visibility and track performance. Data-driven strategies for growth.</p>
+              <p>Understanding on-page SEO fundamentals and analytics insights to improve discoverability and support informed design decisions.</p>
             </div>
           </div>
         </div>
@@ -96,57 +96,59 @@ export function homePage() {
         </div>
 
         <div class="projects__showcase container">
-          <div class="project-card" data-project-url="https://nicklasoeen.github.io/html-css-nicklas/index.html">
-            <img src="assets/images/rainy-days.jpg" alt="Rainy Days Project" class="project-card__image">
-            <img src="assets/logos/rainy-logo.png" alt="Rainy Days Logo" class="project-card__logo">
-          </div>
-          <div class="project-card__info">
-            <div class="project-card__details">
-              <h3 class="project-card__title">Rainy Days</h3>
-              <span class="project-card__tech">HTML &amp; CSS</span>
-              <p class="project-card__description">An outdoor rain jacket e-commerce store built with semantic HTML and custom CSS. Focused on clean design, responsive layouts, and a modern shopping experience.</p>
+          <article class="project-item">
+            <div class="project-card" data-project-url="https://nicklasoeen.github.io/html-css-nicklas/index.html">
+              <img src="assets/images/rainy-days.jpg" alt="Rainy Days Project" class="project-card__image">
+              <img src="assets/logos/rainy-logo.png" alt="Rainy Days Logo" class="project-card__logo">
             </div>
-            <div class="project-card__links">
-              <a href="https://github.com/nicklasoeen/html-css-nicklas" target="_blank" class="project-card__link">GitHub</a>
-              <a href="https://nicklasoeen.github.io/html-css-nicklas/index.html" target="_blank" class="project-card__link">Live Site</a>
+            <div class="project-card__info">
+              <div class="project-card__details">
+                <h3 class="project-card__title">Rainy Days</h3>
+                <span class="project-card__tech">HTML &amp; CSS</span>
+                <p class="project-card__description">An outdoor rain jacket e-commerce store built with semantic HTML and custom CSS. Focused on clean design, responsive layouts, and a modern shopping experience.</p>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/nicklasoeen/html-css-nicklas" target="_blank" class="project-card__link">GitHub</a>
+                <a href="https://nicklasoeen.github.io/html-css-nicklas/index.html" target="_blank" class="project-card__link">Live Site</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="projects__showcase container" style="margin-top: 6rem;">
-          <div class="project-card" data-project-url="https://nicklasoeen.github.io/community-science-museum-project/index.html">
-            <img src="assets/images/bergens-forskningsmuseum.jpg" alt="Community Science Museum Project" class="project-card__image">
-            <img src="assets/logos/bf-museum-logo (1).svg" alt="Community Science Museum Logo" class="project-card__logo">
-          </div>
-          <div class="project-card__info">
-            <div class="project-card__details">
-              <h3 class="project-card__title">Community Science Museum</h3>
-              <span class="project-card__tech">HTML &amp; CSS</span>
-              <p class="project-card__description">An interactive science museum website built with HTML and CSS. Showcasing exhibits and educational programs with an engaging, accessible design.</p>
+          <article class="project-item">
+            <div class="project-card" data-project-url="https://nicklasoeen.github.io/community-science-museum-project/index.html">
+              <img src="assets/images/bergens-forskningsmuseum.jpg" alt="Community Science Museum Project" class="project-card__image">
+              <img src="assets/logos/bf-museum-logo (1).svg" alt="Community Science Museum Logo" class="project-card__logo">
             </div>
-            <div class="project-card__links">
-              <a href="https://github.com/nicklasoeen/community-science-museum-project" target="_blank" class="project-card__link">GitHub</a>
-              <a href="https://nicklasoeen.github.io/community-science-museum-project/index.html" target="_blank" class="project-card__link">Live Site</a>
+            <div class="project-card__info">
+              <div class="project-card__details">
+                <h3 class="project-card__title">Community Science Museum</h3>
+                <span class="project-card__tech">HTML &amp; CSS</span>
+                <p class="project-card__description">An interactive science museum website built with HTML and CSS. Showcasing exhibits and educational programs with an engaging, accessible design.</p>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/nicklasoeen/community-science-museum-project" target="_blank" class="project-card__link">GitHub</a>
+                <a href="https://nicklasoeen.github.io/community-science-museum-project/index.html" target="_blank" class="project-card__link">Live Site</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="projects__showcase container" style="margin-top: 6rem;">
-          <div class="project-card" data-project-url="https://nicklasoeen.github.io/html-css-nicklas/index.html">
-            <img src="assets/images/rainydays-js.jpg" alt="Rainy Days JavaScript Project" class="project-card__image">
-            <img src="assets/logos/rainy-logo.png" alt="Rainy Days Logo" class="project-card__logo">
-          </div>
-          <div class="project-card__info">
-            <div class="project-card__details">
-              <h3 class="project-card__title">Rainy Days JS</h3>
-              <span class="project-card__tech">HTML, CSS, JavaScript &amp; API</span>
-              <p class="project-card__description">An enhanced version of the Rainy Days store using JavaScript to fetch real product data from the Noroff API. Dynamic product rendering replaces static mock data.</p>
+          <article class="project-item">
+            <div class="project-card" data-project-url="https://nicklasoeen.github.io/html-css-nicklas/index.html">
+              <img src="assets/images/rainydays-js.jpg" alt="Rainy Days JavaScript Project" class="project-card__image">
+              <img src="assets/logos/rainy-logo.png" alt="Rainy Days Logo" class="project-card__logo">
             </div>
-            <div class="project-card__links">
-              <a href="https://github.com/nicklasoeen/html-css-nicklas" target="_blank" class="project-card__link">GitHub</a>
-              <a href="https://nicklasoeen.github.io/html-css-nicklas/index.html" target="_blank" class="project-card__link">Live Site</a>
+            <div class="project-card__info">
+              <div class="project-card__details">
+                <h3 class="project-card__title">Rainy Days JS</h3>
+                <span class="project-card__tech">HTML, CSS, JavaScript &amp; API</span>
+                <p class="project-card__description">An enhanced version of the Rainy Days store using JavaScript to fetch real product data from the Noroff API. Dynamic product rendering replaces static mock data.</p>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/nicklasoeen/html-css-nicklas" target="_blank" class="project-card__link">GitHub</a>
+                <a href="https://nicklasoeen.github.io/html-css-nicklas/index.html" target="_blank" class="project-card__link">Live Site</a>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
     </section>
   `;
