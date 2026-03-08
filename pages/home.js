@@ -30,7 +30,10 @@ export function homePage() {
         <p class="section__text">I’m a front-end developer who enjoys turning ideas into clear, engaging web experiences. 
         My work combines structure, visual detail, and usability to create websites that look strong and perform well. 
         This portfolio highlights selected projects that reflect my approach to design, development, and problem-solving.</p>
-        <a href="assets/CV.pdf" target="_blank" rel="noopener" class="about__cv-link">View CV</a>
+        <div class="about__document-links">
+          <a href="assets/CV.pdf" target="_blank" rel="noopener" class="about__cv-link">View CV</a>
+          <a href="assets/Cover Letter.pdf" target="_blank" rel="noopener" class="about__cv-link">View Cover Letter</a>
+        </div>
       </div>
         </div>
     </section>
