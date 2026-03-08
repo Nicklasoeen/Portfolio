@@ -2,6 +2,25 @@ import { homePage } from "./pages/home.js";
 
 const app = document.getElementById("app");
 
+function setupMobileNav() {
+  const hamburger = document.querySelector(".nav__hamburger");
+  const navLinks = document.querySelector(".nav__links");
+
+  hamburger.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    hamburger.classList.toggle("active");
+    hamburger.setAttribute("aria-expanded", isOpen);
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      hamburger.classList.remove("active");
+      hamburger.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
 function setupAccordion() {
   const headers = document.querySelectorAll(".accordion__header");
 
@@ -71,6 +90,7 @@ function setupProjects() {
 
 function renderHomePage() {
   app.innerHTML = homePage();
+  setupMobileNav();
   setupAccordion();
   setupProjects();
 }
